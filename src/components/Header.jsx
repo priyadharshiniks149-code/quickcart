@@ -1,13 +1,11 @@
 import React from 'react';
 import '../styles/Header.css';
 
-function Header() {
+function Header({ totalItems }) {
   return (
-    <header className="header">
-      <div className="header-container">
-        <h1 className="header-title">🛒 QuickCart</h1>
-        <p className="header-subtitle">Your one-stop shop for everything</p>
-      </div>
+    <header>
+      <h1>Shop</h1>
+      <div>Cart: {totalItems}</div>   // ✅ should use totalItems
     </header>
   );
 }
